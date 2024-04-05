@@ -1,0 +1,7 @@
+<h2 class="Container">List of Users Available</h2>
+
+<div class="list">
+    <ul *ngFor="let tmp of USER">
+      <li><a routerLink="user-card" href="user-card" class="item">{{tmp.name | uppercase}}</a></li>
+    </ul>
+</div>

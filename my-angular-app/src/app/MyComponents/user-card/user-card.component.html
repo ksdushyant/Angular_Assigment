@@ -1,0 +1,13 @@
+<h3 style="text-align: center;">These are the User cards</h3>
+
+
+    <div class="container-fluid col-sm-6 mb-3 mb-sm-0">
+      <div *ngFor="let temp of USER" class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{temp.name | uppercase}}</h5>
+          <p class="card-text">Username :- {{temp.username}}</p>
+          
+          <a [routerLink]="['/user-details',temp.id]" class="btn btn-primary">Get more details</a>
+        </div>
+      </div>
+    </div>
